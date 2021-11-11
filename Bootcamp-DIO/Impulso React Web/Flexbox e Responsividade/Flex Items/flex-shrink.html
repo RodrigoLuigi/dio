@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-Shrink</title>
+</head>
+<style>
+    body {
+        background: white;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container {
+        margin: 20px auto;
+        border: 1px solid black;
+        max-width: 350px;
+        display: flex;
+    }
+
+    .items {
+        background-color: orangered;
+        color: white;
+        margin: 5px;
+    }
+
+    .s-0 {
+        flex-shrink: 0;
+        flex-basis: 100px
+    }
+
+    .s-1 {
+        flex-shrink: 1;
+    }
+
+    .s-2 {
+        flex-shrink: 2;
+        flex-basis: 100px
+    }
+
+    .s-3 {
+        flex-shrink: 3;
+        flex-basis: 100px
+    }
+
+    .fg-1 {
+        flex-grow: 1;
+    }
+</style>
+
+<body>
+
+    <p>Flex-Shrink: 1</p>
+    <div class="container">
+        <div class="items fg-1 s-1 ">A</div>
+        <div class="items fg-1 s-1 ">B</div>
+        <div class="items fg-1 s-1 ">C</div>
+        <div class="items fg-1 s-1 ">D</div>
+        <div class="items fg-1 s-1 ">E</div>
+    </div>
+
+    <p></p>
+    <div class="container">
+        <div class="items fg-1 s-1 ">A</div>
+        <div class="items fg-1 s-1 ">B Lorem ipsum dol</div>
+        <div class="items fg-1 s-1 ">C</div>
+        <div class="items fg-1 s-1 ">D</div>
+        <div class="items fg-1 s-1 ">E</div>
+    </div>
+
+    <p>flex-shrink:0 / basis: 100px</p>
+    <div class="container">
+        <div class="items fg-1 s-0 basis">A</div>
+        <div class="items fg-1 s-0 basis">B generated</div>
+        <div class="items fg-1 s-0 basis">C LoremG</div>
+        <div class="items fg-1 s-0 basis">D</div>
+    </div>
+
+    <p>flex-shrink: mix / basis: 100px / flex-grow: 1</p>
+    <div class="container">
+        <div class="items fg-1 s-1 ">A</div>
+        <div class="items fg-1 s-2 ">B generated</div>
+        <div class="items fg-1 s-2 ">C LoremG</div>
+        <div class="items fg-1 s-3 ">D</div>
+    </div>
+
+</body>
+
+</html>

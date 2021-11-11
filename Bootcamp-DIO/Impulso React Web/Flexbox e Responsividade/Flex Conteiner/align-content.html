@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+    <style>
+        body {
+            background: white;
+            color: black;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid black;
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: orangered;
+            padding: 5px;
+            margin: 5px;
+            flex: 1;
+            color: white;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>stretch</h2>
+    <div class="container stretch">
+        <div class="item">elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisiAutem labolaborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. m </div>
+        <div class="item">elit. Autem laborum </div>
+    </div>
+
+    <h2>center</h2>
+    <div class="container center">
+        <div class="item">elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisiAutem labolaborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. m </div>
+        <div class="item">elit. Autem laborum </div>
+    </div>
+
+    <h2>flex-start</h2>
+    <div class="container flex-start">
+        <div class="item">elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisiAutem labolaborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. m </div>
+        <div class="item">elit. Autem laborum </div>
+    </div>
+
+    <h2>flex-end</h2>
+    <div class="container flex-end">
+        <div class="item">elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisiAutem labolaborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. m </div>
+        <div class="item">elit. Autem laborum </div>
+    </div>
+
+    <h2>space-around</h2>
+    <div class="container space-around">
+        <div class="item">elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisiAutem labolaborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. m </div>
+        <div class="item">elit. Autem laborum </div>
+    </div>
+    
+    <h2>space-between</h2>
+    <div class="container space-between">
+        <div class="item">elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisiAutem labolaborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum </div>
+        <div class="item">elit. Autem laborum elit. Autem laborum elit. m </div>
+        <div class="item">elit. Autem laborum </div>
+    </div>
+    <h1></h1>
+
+</body>
+
+</html>

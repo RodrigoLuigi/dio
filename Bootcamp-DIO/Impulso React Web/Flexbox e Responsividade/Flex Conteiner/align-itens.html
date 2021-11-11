@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align itens</title>
+    <style>
+        body{
+            background: white;
+            color: black;
+        }
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+            
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 350px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>ROW</h1>
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet</div>
+    </section>
+
+    <h2>stretch</h2>
+    <section class="container center stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet Lorem ipsum dolor, sit amet  elit. Fugit n ex o, tempora quasi.</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h2>flex-start</h2>
+    <section class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h2>flex-end</h2>
+    <section class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h2>baseline</h2>
+    <section class="container ">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h1>COLUMN</h1>
+    <h2>Center</h2>
+    <section class="container center column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet</div>
+    </section>
+
+    <h2>stretch</h2>
+    <section class="container center stretch column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet Lorem ipsum dolor, sit amet  elit. Fugit n ex o, tempora quasi.</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h2>flex-start</h2>
+    <section class="container flex-start column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h2>flex-end</h2>
+    <section class="container flex-end column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h2>baseline</h2>
+    <section class="container baseline column">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor, sit amet</div>
+        <div class="item">Item 3 Lorem ipsum dolor, sit amet </div>
+    </section>
+
+    <h1>alinhamento central</h1>
+    <section class="container central center">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, beatae unde?
+        </div>
+    </section>
+    <h1></h1>
+
+</body>
+
+</html>

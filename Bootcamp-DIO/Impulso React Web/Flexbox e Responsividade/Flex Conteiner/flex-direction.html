@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flex Direction</title>
+    <style>
+        body {
+            background: white;
+        }
+
+        h3 {
+            margin: 10px 0;
+            color: black;
+            font-size: 23px;
+        }
+
+        .container-row {
+            max-width: 300px;
+            margin: 0;
+            margin-top: 20px;
+            padding: 5px;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        .flex-container0 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+
+        }
+
+        .flex-container1 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            flex-direction: row-reverse;
+        }
+
+        .container-colun {
+            max-width: 300px;
+            margin: 0;
+            margin-top: 20px;
+            padding: 5px;
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        .flex-container-colun0 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+
+        }
+
+        .flex-container-colun1 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            flex-direction: column-reverse;
+        }
+
+
+        .flex-item {
+            background: blue;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 26px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-row">
+
+        <h3>flex-direction 'row'<br />flex-direction 'row-reverse'</h3>
+        <ul class="flex-container0">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+        </ul>
+
+
+
+        <ul class="flex-container1">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+        </ul>
+
+    </div>
+
+    <div class="container-colun">
+
+        <h3>flex-direction 'column'<br><br>flex-direction 'column-reverse'</h3>
+        <ul class="flex-container-colun0">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+        </ul>
+
+
+
+        <ul class="flex-container-colun1">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

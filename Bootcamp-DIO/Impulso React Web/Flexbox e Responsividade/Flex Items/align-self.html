@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: white;
+            color: black;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .flex-container {
+            margin: 20px auto;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .align-items{
+            align-items: center;
+        }
+
+        .flex-column{
+            flex-direction: column;
+        }
+
+        .item {
+            background-color: brown;
+            color: white;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>row</h2>
+    <p>align-center</p>
+    <div class="flex-container align-items">
+        <div class="item auto">AAA</div>
+        <div class="item auto">12345</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsym , amet dolor</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <p>tipos de align-self</p>
+    <div class="flex-container">
+        <div class="item start">AAA</div>
+        <div class="item center">12345</div>
+        <div class="item stretch">123</div>
+        <div class="item auto">Lorem Ipsym , amet dolor</div>
+        <div class="item end">ITEM 4</div>
+    </div>
+
+    <h2>column</h2>
+    <p>align-center</p>
+    <div class="flex-container align-items flex-column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">12345</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsym , amet dolor</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <p>tipos de align-self</p>
+    <div class="flex-container flex-column">
+        <div class="item start">AAA</div>
+        <div class="item center">12345</div>
+        <div class="item stretch">123</div>
+        <div class="item auto">Lorem Ipsym , amet dolor</div>
+        <div class="item end">ITEM 4</div>
+    </div>
+
+
+</body>
+
+</html>

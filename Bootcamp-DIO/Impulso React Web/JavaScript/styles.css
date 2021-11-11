@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.glass-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial;
+    width: 40%;
+    margin:0 auto;
+    overflow: hidden;
+    min-height: 400px;
+    padding:50px;
+    box-sizing:border-box;
+    background: url(../Interface\ Netflix/img/glass.jpg);
+    background-size: cover;
+    color: #fff;
+    border-radius:8px;
+    position: relative;
+  }
+     
+  .glass {
+    display: flex;
+    align-items: center;
+   
+    width: 100%;
+    height: 300px;
+    
+    
+    position: absolute;
+   
+    z-index: 9;
+    border-radius: 50%;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    
+  }
+
+  .content {
+
+    width: 100%;
+    box-sizing:border-box;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #fff, 1px 1px 1px #000, 1px 1px 1px #ccc;
+  }
+  

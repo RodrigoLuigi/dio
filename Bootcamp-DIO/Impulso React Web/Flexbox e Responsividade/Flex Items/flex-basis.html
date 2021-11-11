@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-basis</title>
+    <style>
+        body{
+            background: white;
+            color: black;
+            font-size: 20px;
+        }
+
+        .flex-container{
+            margin: 10px 0;
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+        }
+
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+
+        .items{
+            background-color: orange;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .bauto{
+            flex-basis: auto;
+        }
+
+        .b-0{
+            flex-basis: 0;
+        }
+
+        .w100{
+            flex-basis: 100px;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>auto</p>  
+    <div class="flex-container">
+        <div class="items bauto fg-1">A</div>
+        <div class="items bauto fg-1">ABD</div>
+        <div class="items bauto fg-1">D</div>
+        <div class="items bauto fg-2">CDB</div>
+    </div>
+
+    <p>0 (zero)</p>  
+    <div class="flex-container">
+        <div class="items b-0 fg-1">A</div>
+        <div class="items b-0 fg-1">ABD</div>
+        <div class="items b-0 fg-1">D</div>
+        <div class="items b-0 fg-1">CDB</div>
+    </div>
+
+    <p>basis + width + wrap</p>  
+    <div class="flex-container flex-wrap">
+        <div class="items w100 fg-2">A</div>
+        <div class="items w100 fg-2">ABD</div>
+        <div class="items w100 fg-2">D</div>
+        <div class="items w100 fg-2">CDB</div>
+    </div>
+
+</body>
+
+</html>

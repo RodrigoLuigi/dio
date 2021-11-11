@@ -1,0 +1,144 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-family: 'Arial Black', Times;
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a {
+    font-family: 'Arial', Times;
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*Filme principal e descrição*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgb(0, 0, 0, .55),rgb(0, 0, 0, .55)100%) , url('../img/banner-ash.jpg'); 
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(116, 114, 114, 0.55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    color: rgba(0, 0, 0, .50);
+    background-color: white;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 20px;
+}
+
+.glass{
+    background: url(../img/glass.jpg);
+    background-size: cover;
+
+    display: flex;
+
+    height: 400px;
+    margin-top: 20px;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.glass-txt{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 1px 1px;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 80%;
+    height: 340px;
+    border-radius: 10px;
+
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+
+    font-size: 42px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+    text-shadow: 5px 1px 1px rgb(2, 2, 2), 1px 1px 1px #000, 1px 1px 1px #ccc;
+
+}
+
