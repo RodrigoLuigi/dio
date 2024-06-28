@@ -1,4 +1,5 @@
-<img src="https://imgur.com/DPM4YCj.png" title="Digital Innovation One" 
+<img src="https://imgur.com/DPM4YCj.png" title="Digital Innovation One" width="100%" 
+height="150px"
 align="center"> 
 
 ---
