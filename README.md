@@ -1,4 +1,4 @@
-<div style="width: 100%; display: flex; justify-content:center; text-align:center;">
+<div align="center">
 <img src="logo-dio.svg" title="Digital Innovation One"> 
 </div>
 
