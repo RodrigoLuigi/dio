@@ -2,7 +2,7 @@
 <img src="logo-dio.svg" title="Digital Innovation One"> 
 </div>
 
-### 📌 Aqui você encontrará todos os projetos e exercícios que estou desenvolvendo durante cursos e bootcamps da DIO.
+### 📌 Aqui você encontrará todos os projetos e exercícios que estou desenvolvendo durante cursos e bootcamps da Digital Innovation One.
 
 # <br>🏋️‍♂️ BOOTCAMP
 
