@@ -4,10 +4,13 @@
 
 ### 📌 Aqui você encontrará todos os projetos e exercícios que estou desenvolvendo durante cursos e bootcamps da Digital Innovation One.
 
-# <br>🏋️‍♂️ BOOTCAMP
-
-🔗 [Impulso React Web Developer](https://github.com/RodrigoLuigi/DIO/tree/master/Bootcamp-DIO/Impulso%20React%20Web)<br>
 <br>
 
-# <br>📖 CURSOS
+# 🏋️‍♂️ BOOTCAMP
+
+🔗 [Impulso React Web Developer](https://github.com/RodrigoLuigi/DIO/tree/master/Bootcamp-DIO/Impulso%20React%20Web)
+
+<br>
+
+# 📖 CURSOS
 
