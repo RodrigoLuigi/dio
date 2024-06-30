@@ -1,6 +1,4 @@
-<img src="https://imgur.com/DPM4YCj.png" title="Digital Innovation One" width="100%" 
-height="150px"
-align="center"> 
+<div style="text-align:center;"><img src="logo-dio.svg" title="Digital Innovation One"> </div>
 
 ---
 
